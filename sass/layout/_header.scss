@@ -36,6 +36,8 @@
 
     @media (min-width:50em) {
       background-image: url(../img/Rectangle48.svg);
+      background-size: cover;
+      background-repeat: no-repeat;
 
     }
 
@@ -98,7 +100,7 @@
 
   @media (min-width:50em) {
     &__heading--img {
-      margin-top: -27rem;
+      margin-top: -25rem;
     }
   }
 
