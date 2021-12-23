@@ -1,0 +1,55 @@
+ .footer {
+   display: flex;
+   flex-direction: column;
+   align-content: center;
+   justify-content: center;
+   gap: 0.8rem;
+   font-family: 'Roboto', sans-serif;
+   margin-top: 6rem;
+   margin-bottom: 4.5rem;
+
+   padding: 0 10rem;
+
+   @media(min-width:50em) {
+     flex-direction: row;
+     align-items: center;
+     justify-content: space-between;
+
+   }
+
+   &__logo--box {
+
+     max-width: 20.6rem;
+
+     @media(max-width:50em) {
+       display: none
+     }
+   }
+
+
+   &__media {
+     display: flex;
+     align-content: center;
+     justify-content: center;
+     gap: 2.4rem;
+
+   }
+
+   .icon {
+     width: 3.2rem;
+     color: $color-primery;
+     fill: currentColor;
+   }
+
+   &__txt {
+     display: block;
+     font-size: 1.2rem;
+     font-weight: 700;
+     line-height: 1.8rem;
+     letter-spacing: 0.1px;
+     color: $color-grey-dark;
+     text-align: center;
+
+
+   }
+ }

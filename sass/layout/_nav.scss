@@ -1,0 +1,45 @@
+.nav {
+  margin: 1.7rem 1.6rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  height: 7.8rem;
+
+
+  &__list {
+    display: none;
+    gap: 10.4rem;
+    font-size: 1.6rem;
+    line-height: 2.8rem;
+    font-weight: 600;
+    letter-spacing: 0.2px;
+    margin-right: 4rem;
+
+    @media (min-width:60em) {
+      display: flex;
+
+      &--item:hover,
+      &--item:active {
+        color: $color-primery;
+      }
+    }
+
+  }
+
+
+
+
+  &__logo--box {
+    max-width: 24.6rem;
+    padding-left: 0.9rem;
+
+  }
+
+  &__mobile--list {
+    color: $color-grey;
+
+    @media (min-width:60em) {
+      display: none
+    }
+  }
+}

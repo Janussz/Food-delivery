@@ -1,0 +1,56 @@
+@mixin frame {
+  h2 {
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 5.7rem;
+    letter-spacing: 0.2px;
+    color: $color-black;
+    padding: 1rem 3rem;
+    margin-bottom: 4rem;
+    text-align: center;
+
+    @media(min-width:50em) {
+      text-align: left;
+    }
+  }
+
+  h3 {
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 3.6rem;
+    letter-spacing: 0.1px;
+    color: $color-primery;
+    margin-bottom: 3rem;
+    padding: 1rem 3rem;
+    text-align: center;
+
+    @media(min-width:50em) {
+
+      text-align: left;
+    }
+  }
+
+  h4 {
+    font-size: 2.4rem;
+    font-weight: 500;
+    line-height: 3.8rem;
+    letter-spacing: 0.2px;
+    color: $color-grey;
+    padding: 1rem 3rem;
+    text-align: center;
+
+    @media(min-width:50em) {
+      text-align: left;
+
+    }
+  }
+
+  img {
+    max-width: 60rem;
+
+    @media(min-width:10em) {
+      max-width: 45rem;
+
+    }
+  }
+}

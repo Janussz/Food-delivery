@@ -1,0 +1,168 @@
+.main__frame--first {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 6.5rem;
+  @include frame;
+
+  img {
+    margin-left: 14rem;
+  }
+
+  @media(min-width:50em) {
+    flex-direction: row;
+
+
+    img {
+      order: -1;
+      margin-left: 0;
+
+    }
+  }
+
+
+
+
+
+}
+
+
+
+
+.main__frame--second {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @include frame;
+
+  img {
+    margin-left: 10rem;
+  }
+
+  @media(min-width:50em) {
+
+    flex-direction: row;
+
+    img {
+      margin-left: 0;
+    }
+
+  }
+
+
+
+
+
+}
+
+
+
+
+.main__frame--thrid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @include frame;
+
+  img {
+    margin-left: 10rem;
+  }
+
+  @media(min-width:50em) {
+    flex-direction: row;
+
+
+    img {
+      order: -1;
+      margin-left: 0;
+
+    }
+  }
+
+
+}
+
+
+
+
+
+.action__content {
+  background-color: $color-blue-dark;
+  margin-top: -3rem;
+
+  @media (min-width:50em) {
+    background-image: url(../img/Rectangle47.svg);
+
+  }
+
+  &--box {
+
+    visibility: inherit;
+    padding: 11rem 2.4rem;
+
+    .btn-c {
+      width: 13.7rem;
+      height: 6rem;
+      background: $color-primery;
+      border-radius: 10px;
+      color: $color-white;
+      border: none;
+      font-size: 1.6rem;
+      font-weight: 700;
+      line-height: 2.8rem;
+      letter-spacing: 0.2px;
+    }
+
+
+    .btn-w {
+      width: 18.6rem;
+      height: 6rem;
+      border-radius: 10px;
+      border: 1px solid $color-white;
+      font-size: 1.6rem;
+      font-weight: 700;
+      line-height: 2.8rem;
+      letter-spacing: 0.2px;
+      background-color: $color-blue-dark;
+      color: $color-white;
+
+
+    }
+
+  }
+
+  &--buttons {
+    display: flex;
+    justify-content: space-evenly;
+
+  }
+
+  h2 {
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 5.7rem;
+    letter-spacing: 0.2px;
+    color: $color-white;
+    text-align: center;
+
+  }
+
+  h3 {
+    font-size: 2.4rem;
+    font-weight: 500;
+    line-height: 3.8rem;
+    letter-spacing: 0.2px;
+    color: $color-grey;
+    text-align: center;
+    padding: 1rem;
+    margin-bottom: 5rem;
+
+    @media (min-width:50em) {
+      color: $color-white;
+    }
+  }
+
+
+
+}
